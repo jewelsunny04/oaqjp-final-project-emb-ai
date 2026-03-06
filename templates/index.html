@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emotion Detector</title>
+<script src="/static/mywebscript.js"></script>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#4facfe,#00f2fe);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    width:400px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    margin-bottom:15px;
+}
+
+button{
+    padding:10px 20px;
+    background:#4facfe;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#007bff;
+}
+
+#system_response{
+    margin-top:20px;
+    font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Emotion Detection Application</h2>
+
+<input type="text" id="textToAnalyze" placeholder="Enter text here">
+
+<br>
+
+<button onclick="RunSentimentAnalysis()">Analyze Emotion</button>
+
+<div id="system_response"></div>
+
+</div>
+
+</body>
+</html>
